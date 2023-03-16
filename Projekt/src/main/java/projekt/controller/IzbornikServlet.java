@@ -38,6 +38,7 @@ public class IzbornikServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<button onclick=\"window.location.href='prozor';\">Kreiranje korisnika</button>");
+            out.println("<br>");
             out.println("<button onclick=\"window.location.href='pretraga';\">Pretraga i upisivanje na ugovor</button>");
             out.println("</body>");
             out.println("</html>");
