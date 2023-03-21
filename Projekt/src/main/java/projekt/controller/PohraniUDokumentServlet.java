@@ -49,10 +49,10 @@ public class PohraniUDokumentServlet extends HttpServlet {
         
         
         if (!odabrano.isEmpty()) {
-            Document document = new Document("C:\\Users\\" + System.getProperty("user.name") + "\\Ugovori\\ugovoriTemplate\\" + documentName + ".docx");
-            System.out.println(document.toString());
+            Document document = new Document("C:\\Users\\" + System.getProperty("user.name") + "\\Ugovori\\ugovoriTemplate\\" + documentName.toString() + ".docx");
+            // System.out.println(document.toString());
             Korisnik k = odabrano.get(0);
-            System.out.println(k.getIme());
+           // System.out.println(k.getIme());
             document.replace("<ime>", k.getIme(), false, true);
             document.replace("<prezime>", k.getPrezime(), false, true);
             document.replace("<adresa>", k.getUlica(), false, true);
@@ -61,7 +61,8 @@ public class PohraniUDokumentServlet extends HttpServlet {
             document.replace("<kucniBroj>", k.getKucniBroj(), false, true);
             document.replace("<oib>", k.getOIB(), false, true);
             
-            document.saveToFile("C:\\Users\\" + System.getProperty("user.name") + "\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
+            document.saveToFile("C:\\Users\\" + System.getProperty("user.name") + "\\Ugovori\\" + k.getIme() + k.getPrezime() + ".docx", FileFormat.Docx);
+       
         }
 
         // Save the updated document

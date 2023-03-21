@@ -31,17 +31,17 @@ public class IzbornikServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Izbornik</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<button onclick=\"window.location.href='prozor';\">Kreiranje korisnika</button>");
-            out.println("<br>");
-            out.println("<button onclick=\"window.location.href='pretraga';\">Pretraga i upisivanje na ugovor</button>");
-            out.println("</body>");
-            out.println("</html>");
+//            out.println("<!DOCTYPE html>");
+//            out.println("<html>");
+//            out.println("<head>");
+//            out.println("<title>Izbornik</title>");            
+//            out.println("</head>");
+//            out.println("<body>");
+//            //out.println("<button class=\"button-2\" role=\"button\">Button 2</button>");
+//            out.println("<button onclick=\"window.location.href='prozor';\">Kreiranje korisnika</button>");
+//            out.println("<button onclick=\"window.location.href='pretraga';\">Pretraga i upisivanje na ugovor</button>");
+//            out.println("</body>");
+//            out.println("</html>");
         }
     }
 

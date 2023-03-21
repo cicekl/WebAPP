@@ -86,7 +86,7 @@ public class ProzorServlet extends HttpServlet {
         try {
             session.removeAttribute("greska");
             ok.create();
-            session.setAttribute("poruka", "Korisnik uspješno spremljen!");
+            session.setAttribute("poruka", "Korisnik uspješno spremljen!😄");
         } catch (OfirException ex) {
             session.removeAttribute("poruka");
             session.setAttribute("greska", ex.getPoruka());
